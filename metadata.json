@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets",
+  "description": "Global financial markets overview featuring real-time indices, US stocks, crypto, commodities, forex rates, interactive charts, and market screeners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

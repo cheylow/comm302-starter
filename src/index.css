@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --tv-dark: #131722;
+    --tv-muted: #787b86;
+    --tv-border: #e0e3eb;
+    --tv-light-bg: #f8f9fd;
+    --tv-hover-bg: #f0f3fa;
+    --tv-card-bg: #ffffff;
+    --tv-blue: #2962ff;
+    --tv-blue-hover: #1e4bd8;
+    --tv-green: #089981;
+    --tv-red: #f23645;
+  }
+
+  .dark {
+    --tv-dark: #f0f3fa;
+    --tv-muted: #868993;
+    --tv-border: #2a2e39;
+    --tv-light-bg: #1e222d;
+    --tv-hover-bg: #2a2e39;
+    --tv-card-bg: #131722;
+    --tv-blue: #2962ff;
+    --tv-blue-hover: #3b74ff;
+    --tv-green: #089981;
+    --tv-red: #f23645;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, sans-serif;
+  }
+}
+
+.num-tabular {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+/* Hide scrollbars for pill overflow containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sparkline-svg {
+  overflow: visible;
+}
+
+@keyframes flash-green {
+  0% { background-color: rgba(8, 153, 129, 0.25); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flash-red {
+  0% { background-color: rgba(242, 54, 69, 0.25); }
+  100% { background-color: transparent; }
+}
+
+.flash-up {
+  animation: flash-green 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.flash-down {
+  animation: flash-red 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
